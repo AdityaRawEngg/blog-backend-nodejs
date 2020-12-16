@@ -4,17 +4,17 @@
 
 The Endpoint to get All the Blogs is:
 
-<lable>/blogs</lable>
+<lable>" /blogs "</lable>
 
 The Endpoint to
 
 get Single Blog(using GET method),
 
-to update the Blog (using POST method) and
+to update a Blog (using PUT method) and
 
-delete the Blog (using DELETE method).
+delete the a (using DELETE method).
 
-<lable>/blogs/blogId</lable>
+<lable> "/blogs/blogId "</lable>
 
 ## Data
 
