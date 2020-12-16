@@ -1,0 +1,29 @@
+{
+  "name": "blog-backend-nodejs",
+  "version": "1.0.0",
+  "description": "This server is to generate and fetch blog data using nodejs express server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdityaRawEngg/blog-backend-nodejs.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "express",
+    "javaScript"
+  ],
+  "author": "Aditya Shukla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdityaRawEngg/blog-backend-nodejs/issues"
+  },
+  "homepage": "https://github.com/AdityaRawEngg/blog-backend-nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
