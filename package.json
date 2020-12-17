@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/AdityaRawEngg/blog-backend-nodejs#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
   }
 }
