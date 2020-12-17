@@ -6,39 +6,49 @@ const sendResponse = require("../helpers/sendResponse");
 const fileName = path.join(__dirname, "..", "data", "blogs.json");
 const Blogs = JSON.parse(fs.readFileSync(fileName, "utf-8"));
 
+// Get all blogs
 const getAllBlogs = (req, resp, next) => {
   if (Blogs.length == 0) {
-    return sendError(new AppError(404, "Unsuccessful", "No Blogs Found"), resp);
+    return sendResponse(200, "No Blogs found", resp);
+  }
+  if (Object.keys(req.query).length != 0) {
+    const blogs = Blogs.filter((blog) => {
+      return Object.keys(req.query).every((query) => {
+        return blog[query] == req.query[query];
+      });
+    });
+    if (blogs.length == 0) {
+      return sendResponse(200, "No Blogs found", resp);
+    }
+    return sendResponse(200, blogs, resp);
   }
   sendResponse(200, Blogs, resp);
 };
+
+// get single blog
 const getSingleBlog = (req, resp, next) => {
   const blog = Blogs.find((blog) => {
     return blog.id === req.params.blogId;
   });
   if (!blog) {
-    return sendError(
-      new AppError(
-        404,
-        "Unsuccessfull",
-        `No Blogs Found with id = ${req.params.blogId}`
-      ),
+    return sendResponse(
+      200,
+      `No Blogs Found with id = ${req.params.blogId}`,
       resp
     );
   }
   sendResponse(200, blog, resp);
 };
+
+//update single blog
 const updateBlog = (req, resp, next) => {
   const blog = Blogs.find((blog) => {
     return blog.id === req.params.blogId;
   });
   if (!blog) {
-    return sendError(
-      new AppError(
-        404,
-        "Unsuccessfull",
-        `No Blogs Found with id = ${req.params.blogId}`
-      ),
+    return sendResponse(
+      200,
+      `No Blogs Found with id = ${req.params.blogId}`,
       resp
     );
   }
@@ -59,17 +69,15 @@ const updateBlog = (req, resp, next) => {
   sendResponse(200, blog, resp);
 };
 
+//Delete single blog
 const deleteBlog = (req, resp, next) => {
   const blogIndex = Blogs.findIndex((blog) => {
     return blog.id === req.params.blogId;
   });
   if (blogIndex == -1) {
-    return sendError(
-      new AppError(
-        404,
-        "Unsuccessful",
-        `No Blogs Found with id = ${req.params.blogId}`
-      ),
+    return sendResponse(
+      200,
+      `No Blogs Found with id = ${req.params.blogId}`,
       resp
     );
   }
