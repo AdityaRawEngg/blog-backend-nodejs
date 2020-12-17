@@ -26,3 +26,8 @@ The blog data is stored in a json file inside data directory
 2. cd blog-backend-nodejs
 3. Run "npm install" in the terminal
 4. run " npm run start" to start the server
+
+
+# Live demo
+
+Live hosted server on heroku with base url ==> https://blogs-json.herokuapp.com/
