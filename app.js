@@ -31,15 +31,15 @@ app.get("/", (req, resp) => {
 });
 
 app.get("/cs", (req, resp) => {
-  resp.status(200).json({ data: [contentstack] });
+  resp.status(200).json({ data: contentstack });
 });
 
 app.get("/raw", (req, resp) => {
-  resp.status(200).json({ data: [raw] });
+  resp.status(200).json({ data: raw });
 });
 
 app.get("/surfboard", (req, resp) => {
-  resp.status(200).json({ data: [surfboard] });
+  resp.status(200).json({ data: surfboard });
 });
 
 app.use("/blogs", blogRouter);
