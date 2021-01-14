@@ -1,0 +1,33 @@
+[{
+    "navigationLinks":{
+        "logo":{
+            "src":"https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/bltc1a71705f49d391d/5de663548d1dce6ad6bed8bf/header-logo.svg?format=pjpg&width=220",
+            "alt":"Raw Engineering"
+        },
+        "links":[
+            {
+                "display":"Home",
+                "href":"/"
+            },
+            {
+                "display":"Contentstack",
+                "href":"/contentstack"
+            }
+
+        ],
+        "contactUs":{"href":"https://www.raweng.com/contact-us"}
+    },
+    "header":{
+        "banner-image":"https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blte86401d468e74845/5e3137f08f7e217daef66f54/Landing_Page_Image_Motion.jpg?format=pjpg&width=540",
+        "heading":"Fast Track Innovation From Vision to Reality",
+        "subHeading":"Raw Engineering’s experienced Strategic Consultants, Solutions Architects, Designers, and Developers turn Business Vision into Digital Reality."
+    },
+    "section":{
+        "sectionHeading":"WHAT WE DO",
+        "sectionImage":"https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blt295b153f13c76458/5e313899507d2f74fb78ca3c/Digital_Transformation3_us_xT3DQ40lus4.png?format=pjpg&width=590",
+        "sectionContent":[{
+            "subHeading":"Digital Transformation: Building the Modern Microservices Stack",
+            "content":"Raw Engineering was an early leader in the movement to architect and build the modern, microservices-driven tech stack. We bring strategic thinking and years of experience to help our clients transform their Digital Enterprise."
+        }]
+    }
+}]

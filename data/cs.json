@@ -1,0 +1,39 @@
+[{
+    "navigationLinks":{
+        "logo":{
+            "src":"https://images.contentstack.io/v3/assets/bltc5a09bf374882538/blt8dc4dd93cd29ae05/5f1a2be13986577a2d5f6736/Contentstack-full-logo-white_800x133.png",
+            "alt":"Surfboard Ventures"
+        },
+        "links":[
+            {
+                "display":"Home",
+                "href":"/"
+            },
+            {
+                "display":"Raw Engineering",
+                "href":"/rawengineering"
+            }
+
+        ],
+        "contactUs":{"href":"https://www.contentstack.com/company/contact-us/"}
+    },
+    "header":{
+        "banner-image":"https://images.contentstack.io/v3/assets/bltc5a09bf374882538/blt0eac3686a06a4a3f/5f1a2be2ecbff322d09554d6/hero-carousel-1.jpg",
+        "heading":"Finally, A Modern Content Management System",
+        "subHeading":"Contentstack brings business and technology teams together to deliver personalized, omnichannel digital experiences."
+    },
+    "section":{
+        "sectionHeading":"Why Choose Contentstack?",
+        "sectionImage":"",
+        "sectionContent":[{
+            "subHeading":"Idea-to-Deployment in Record Time",
+            "content":"Accelerate the delivery of digital content, sites, and apps to bring new experiences to life in days, not months, with a modern CMS."
+        },{
+            "subHeading":"Improve ROI and ‘Return on Experience’",
+            "content":"Reap greater returns on investments – both past and future – in digital content and digital experiences."
+        },{
+            "subHeading":"Better Collaboration, Better Control",
+            "content":"Bring business and technology teams into harmony with our headless CMS, and unleash the full potential of your marketers, editors, designers, and developers."
+        }]
+    }
+}]
